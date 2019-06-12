@@ -294,12 +294,12 @@ class SlidingPanel(context: Context, attrs: AttributeSet? = null) : FrameLayout(
                 canvas.getClipBounds(drawChildChildTempRect)
                 result = super.drawChild(canvas, child, drawingTime)
 
-                if (currentSlide > 0) {
+                /*if (currentSlide > 0) {
                     val currentShadeAlpha = (SHADE_COLOR_MAX_ALPHA * currentSlide).toInt()
                     val currentShadeColor = currentShadeAlpha shl 24 or SHADE_COLOR
                     shadePaint.color = currentShadeColor
                     canvas.drawRect(drawChildChildTempRect, shadePaint)
-                }
+                }*/
             }
             slidingView -> {
                 applyFitToScreenOnce()
